@@ -1,0 +1,39 @@
+ ul {
+  list-style-type: none;
+ }
+body {
+  background-color: black;
+}
+.trending {
+  color: white;
+}
+.container ul{
+  display: flex;
+gap: 10px;
+}
+h4 {
+  color: white;
+}
+p {
+  color: white;
+}
+.reasonToJoin {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.reasonToJoin ul {
+  display: flex;
+  gap: 10px;
+  width: 75%;
+}
+h4 {
+  font-size: 26px;
+}
+.reasonToJoin ul li {
+  font-size: 20px;
+  flex: 1;
+  padding: 15px;
+  background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
