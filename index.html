@@ -6,36 +6,104 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <header class="nav">
-        <div id="logo"></div>
-        <div id="sign/language"></div>
-      </header>
+    <div class="content">
+      <div class="overlay"></div>
+    <header class="nav">
+      <img src="download.png" alt="" class="logo">
+      <div class="nav-buttons">
+        <select>
+          <option>English</option>
+          <option>Español</option>
+        </select>
+        <button class="sign-in">Sign In</button>
+      </div>
+    </header>
+
+    <div class="center-box">
+      <h1>Unlimited movies, TV shows, and more</h1>
+          <h3>Starts at $7.99. Cancel anytime.</h3>
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+      <form class="email-form">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started ></button>
+      </form>
     </div>
-    <div></div>
+    </div>
+  </div>
   </body>
   <style>
-    body { 
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-        border: 2px solid black;
+        body,html {
+    
+      /* margin: -5px; */
+      height: 100%;
+      /* width: 100vw; */
+      /* border: 2px solid black; */
     }
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        height: 6rem;
-        border: 2px solid red;
+    .content {
+      position: relative;
+      height: 100vh;
+      background: url("background.jpg") center/cover no-repeat;
+      color: white;
     }
-    #logo {
-        display: flex;
-        justify-content: flex-start;
-        align-items: start;
-        height: 4em;
-        width: 4em;
-        border: 2px solid green;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .nav {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border: 2px solid red;
+      /* overflow-y: hidden; */
+    }
+    .logo {
+ height: 80px;
+    }
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .center-box {
+      position: relative;
+      text-align: center;
+      max-width: 500px;
+      padding-top: 150px;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 2;
+      border: 2px solid blue;
+    }
+    .center-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .center-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .email-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .email-form button {
+      padding: 10px 20px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
 </html>
