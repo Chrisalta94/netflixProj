@@ -1,15 +1,19 @@
- ul {
+ul {
   list-style-type: none;
- }
+}
 body {
   background-color: black;
 }
 .trending {
   color: white;
 }
-.container ul{
+.container ul {
   display: flex;
-gap: 10px;
+  gap: 10px;
+}
+h3 {
+  color: white;
+  margin-left: 14%;
 }
 h4 {
   color: white;
@@ -19,12 +23,12 @@ p {
 }
 .reasonToJoin {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .reasonToJoin ul {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   width: 75%;
 }
 h4 {
@@ -34,6 +38,32 @@ h4 {
   font-size: 20px;
   flex: 1;
   padding: 15px;
-  background: #020024;
-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: #a8c0ff;
+  background: linear-gradient(to right, #a8c0ff, #3f2b96);
+  border-radius: 10px;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="email"] {
+  width: 500px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid gray;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.getStarted {
+  width: 175px; /* Adjust the width as needed */
+  height: 50px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  border: none;
+  vertical-align: middle;
+  border-radius: 10px;
 }
