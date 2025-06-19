@@ -7,7 +7,10 @@ body {
   color: #fff;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -19,12 +22,13 @@ img {
 /* Overlay Background with Content */
 .content {
   position: relative;
-  background: url('img/background.jpg');
-  height: 90vh;
+  background: url("img/background.jpg");
+  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .overlay {
@@ -37,7 +41,7 @@ img {
   z-index: 0;
 }
 
-/* Nav Bar */
+/* logo along with the language and sign in button */
 .nav {
   position: relative;
   z-index: 1;
@@ -49,6 +53,7 @@ img {
 
 .logo {
   width: 120px;
+  height: auto;
 }
 
 .nav-buttons {
@@ -57,7 +62,8 @@ img {
   gap: 10px;
 }
 
-select, .sign-in {
+select,
+.sign-in {
   padding: 8px 14px;
   font-size: 0.9em;
   background-color: rgba(0, 0, 0, 0.7);
@@ -72,7 +78,7 @@ select, .sign-in {
   cursor: pointer;
 }
 
-/* Centered Content */
+/* text and email box container */
 .center-box {
   position: relative;
   z-index: 1;
@@ -108,8 +114,9 @@ select, .sign-in {
   padding: 12px;
   width: 300px;
   max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 3px;
+  border-radius: 5px solid black;
   font-size: 1em;
 }
 
@@ -124,17 +131,24 @@ select, .sign-in {
 }
 /* announcement or popcorn section */
 .announcement {
+  margin-top: 2rem;
   position: relative;
   display: flex;
   color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
   /* height: 2rem;
   align-items: center;
-  justify-content: center;
   /* padding: 40px 20px; */
   /* text-align: center;
-  background-color: rgba(255, 0, 0, 0.8);
-  color: white; */ 
+  color: white; */
   overflow: hidden;
+  cursor: pointer;
+  justify-content: center;
+  background-color: transparent;
 }
 .hover-effect {
   /* position: absolute; */
@@ -143,14 +157,15 @@ select, .sign-in {
   width: 50%;
   align-items: center;
   margin: 10px solid black;
-  background-color:cadetblue; */
-
+   */
+  width: 70%;
+  height: 50%;
+  background-color: transparent;
   transition: background-color 0.3s ease;
   padding: 10px;
-
 }
 .announcement:hover .hover-effect {
-  background-color: ff4444;
+  background-color: gray;
 }
 .announcement-text {
   /* position: relative;
@@ -161,8 +176,8 @@ select, .sign-in {
 .popcorn {
   /* position: absolute; */
   float: left;
-  width: 120px;
-  height: auto;
+  width: 8%;
+  height: 8%;
   /* background-size: cover; */
 }
 
@@ -174,6 +189,7 @@ select, .sign-in {
   background-color: rgba(0, 0, 0, 0.7);
   /* padding: 10px; */
   border-radius: 4px;
+  float: right;
 }
 
 /* Trending Now Section */
@@ -181,7 +197,8 @@ select, .sign-in {
   padding: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .trending h2 {
   margin-bottom: 20px;
@@ -253,7 +270,7 @@ select, .sign-in {
   color: #ccc;
 }
 
-/* Feature Icons (Optional Icons Section) */
+/* Feature Icons   */
 .icon {
   width: 50px;
   height: 50px;
@@ -328,6 +345,14 @@ select, .sign-in {
 
 .footer-links li {
   margin-bottom: 10px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+.footer-links li:hover {
+  background-color: gray;
+  cursor: pointer;
+  color: white;
 }
 
 .language-select {
