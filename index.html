@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content">
-      <div class="overlay"></div>
+      <div class="overlay">
+
     <header class="nav">
-      <img src="download.png" alt="" class="logo">
+      <img src="img\logo.png" alt="Netflix-logo" class="logo">
       <div class="nav-buttons">
         <select>
-          <option>English</option>
-          <option>Español</option>
+          <option>🌐 English</option>
+          <option>🌐 Español</option>
         </select>
         <button class="sign-in">Sign In</button>
       </div>
@@ -33,77 +35,106 @@
     </div>
     </div>
   </div>
+  <div class="announcement">
+    <div class="hover-effect">
+   <img src="img\popcorn.png" alt="popcorn" class = "popcorn">
+   <div class="announcement-text">
+    <p>Get our most affortable,ad-supported plan.</p>
+    <button class="learn-more">Learn More</button>
+  </div>
+  </div>
+  </div>
+   <section class="trending">
+    <h2>Trending Now</h2>
+    <div class="cards">
+      <div class="card"><span class="number">1</span><img src="img\avengers.jpeg" alt="Trending 1"></div>
+      <div class="card"><span class="number">2</span><img src="img\mineCraft.jpeg" alt="Trending 2"></div>
+      <div class="card"><span class="number">3</span><img src="img\nacholibre.jpeg" alt="Trending 3"></div>
+      <div class="card"><span class="number">4</span><img src="img\django.jpeg" alt="Trending 4"></div>
+      <div class="card"><span class="number">5</span><img src="img\shrek.jpeg" alt="Trending 5"></div>
+      <div class="card"><span class="number">6</span><img src="img\moonlight.jpeg" alt="Trending 5"></div>
+      <div class="card"><span class="number">7</span><img src="img\rougeOne.jpeg" alt="Trending 5"></div>
+      <div class="card"><span class="number">8</span><img src="img\batman.jpeg" alt="Trending 5"></div>
+      <div class="card"><span class="number">9</span><img src="img\blackPanther.jpeg" alt="Trending 5"></div>
+      <div class="card"><span class="number">10</span><img src="img\lotr.jpeg" alt="Trending 5"></div>
+    </div>
+  </section>
+
+  <section class="reasons">
+  <h2>More Reasons to Join</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="icon tv"><img src="img\tv.png" alt="tv"></div>
+      <h3>Enjoy on your TV</h3>
+      <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="feature">
+      <div class="icon download"><img src="img\download icon.png" alt=""></div>
+      <h3>Download your shows to watch offline</h3>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="feature">
+      <div class="icon stream"><img src="img\telescope.png" alt="igtelescope"></div>
+      <h3>Watch everywhere</h3>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="feature">
+      <div class="icon kids"><img src="img\social.png" alt="social"></div>
+      <h3>Create profiles for kids</h3>
+      <p>Send kids on adventures with their favorite characters — free with your membership.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="cta">
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="email-form">
+      <input type="email" placeholder="Email address">
+      <button>Get Started <span>&#10140;</span></button>
+    </div>
+  </div>
+
+  <p class="questions">Questions? Call <a href="tel:1-844-505-2993">1-844-505-2993</a></p>
+
+  <div class="footer-links">
+    <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Redeem Gift Cards</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Speed Test</a></li>
+      <li><a href="#">Ad Choices</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Investor Relations</a></li>
+      <li><a href="#">Buy Gift Cards</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">Legal Notices</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Ways to Watch</a></li>
+      <li><a href="#">Corporate Information</a></li>
+      <li><a href="#">Only on Netflix</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Netflix House</a></li>
+      <li><a href="#">Netflix Shop</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+    </ul>
+  </div>
+
+  <div class="language-select">
+    <select>
+      <option value="en">🌐 English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+</footer>
   </body>
-  <style>
-        body,html {
-    
-      /* margin: -5px; */
-      height: 100%;
-      /* width: 100vw; */
-      /* border: 2px solid black; */
-    }
-    .content {
-      position: relative;
-      height: 100vh;
-      background: url("background.jpg") center/cover no-repeat;
-      color: white;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .nav {
-      display: flex;
-      position: relative;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      border: 2px solid red;
-      /* overflow-y: hidden; */
-    }
-    .logo {
- height: 80px;
-    }
-    .nav-buttons {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .center-box {
-      position: relative;
-      text-align: center;
-      max-width: 500px;
-      padding-top: 150px;
-      margin: 0 auto;
-      text-align: center;
-      z-index: 2;
-      border: 2px solid blue;
-    }
-    .center-box h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    .center-box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-    .email-form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-    .email-form button {
-      padding: 10px 20px;
-      background-color: #e50914;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  </style>
 </html>
