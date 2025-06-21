@@ -11,3 +11,23 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
 });
+
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    const answer = item.querySelector(".faq-answer");
+    const isOpen = item.classList.contains("open");
+
+    // Close all
+    document.querySelectorAll(".faq-item").forEach((el) => {
+      el.classList.remove("open");
+      el.querySelector(".faq-answer").style.maxHeight = null;
+    });
+
+    // Open selected
+    if (!isOpen) {
+      item.classList.add("open");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});

@@ -146,3 +146,56 @@ input[type="email"] {
   vertical-align: middle;
   border-radius: 10px;
 }
+.faq-container {
+  max-width: 1250px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.faq-item {
+  background-color: #303030; /* Netflix-style gray */
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background-color: #303030;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−';
+}
+
+.faq-answer {
+  background-color: #303030;
+  color: #dcdcdc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 0 20px 20px;
+  margin: 0;
+  line-height: 1.5;
+}
+
