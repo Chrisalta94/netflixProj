@@ -1,4 +1,10 @@
+
 /* General Styles */
+
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -51,6 +57,7 @@ img {
   padding: 20px 40px;
 }
 
+
 .logo {
   width: 120px;
   height: auto;
@@ -60,6 +67,88 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+
+.carousel-container {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1250px; /* or any width you prefer */
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  padding: 0 40px; /* for spacing next to arrows */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel ul {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel li {
+  flex: 0 0 auto;
+  width: 200px; /* fixed poster width */
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+h3 {
+  color: white;
+  margin-left: 14%;
+
 }
 
 select,
@@ -248,6 +337,7 @@ select,
 
 .features {
   display: flex;
+
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
@@ -292,10 +382,15 @@ select,
 
 .footer .cta {
   margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer .email-form {
   display: flex;
+
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -366,3 +461,102 @@ select,
   padding: 8px 12px;
   border-radius: 4px;
 }
+
+  gap: 12px;
+  width: 75%;
+}
+h4 {
+  font-size: 26px;
+}
+.reasonToJoin ul li {
+  font-size: 20px;
+  flex: 1;
+  padding: 15px;
+  background-image: linear-gradient(
+    to right bottom,
+    #132846,
+    #322d50,
+    #4e3256,
+    #693656,
+    #7f3d51
+  );
+  border-radius: 10px;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="email"] {
+  width: 500px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid gray;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.getStarted {
+  width: 175px; /* Adjust the width as needed */
+  height: 50px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  border: none;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.faq-container {
+  max-width: 1250px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.faq-item {
+  background-color: #303030; /* Netflix-style gray */
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background-color: #303030;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−';
+}
+
+.faq-answer {
+  background-color: #303030;
+  color: #dcdcdc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 0 20px 20px;
+  margin: 0;
+  line-height: 1.5;
+}
+
